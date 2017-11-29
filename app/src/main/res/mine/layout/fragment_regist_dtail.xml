@@ -1,0 +1,90 @@
+<com.example.jian.allview.utils.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+    android:background="@mipmap/loginbackground"
+          >
+
+
+    <com.example.jian.allview.utils.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="10%"
+        android:orientation="horizontal">
+  <TextView
+      android:text="*电话："
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_widthPercent="20%"
+      android:gravity="center"/>
+        <EditText
+            android:inputType="phone"
+            app:layout_widthPercent="50%"
+            android:id="@+id/reg_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/reg_bthqyzm"
+            android:text="获取验证码"
+
+            app:layout_widthPercent="30%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.example.jian.allview.utils.PercentLinearLayout>
+    <com.example.jian.allview.utils.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="10%"
+        android:orientation="horizontal">
+        <TextView
+            android:inputType="number"
+            android:text="*验证码："
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="20%"
+            android:gravity="center"/>
+        <EditText
+            app:layout_widthPercent="50%"
+            android:id="@+id/reg_yzm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.example.jian.allview.utils.PercentLinearLayout>
+    <com.example.jian.allview.utils.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="10%"
+        android:orientation="horizontal">
+        <TextView
+            android:text="*密码："
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="20%"
+            android:gravity="center"/>
+        <EditText
+            app:layout_widthPercent="50%"
+            android:id="@+id/reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.example.jian.allview.utils.PercentLinearLayout>
+
+
+
+    <Button
+        android:background="#ADD8E6"
+        android:id="@+id/login_detail_zc"
+        android:text="注册"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"/>
+
+
+</com.example.jian.allview.utils.PercentLinearLayout>

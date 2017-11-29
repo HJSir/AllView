@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:color="#EFEFEF"
+    android:background="@mipmap/loginbackground"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入用户名..."
+            android:background="@drawable/edit_bg"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+
+            android:id="@+id/password"
+
+            android:hint="请输入密码. . ."
+            android:background="@drawable/edit_bg"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:background="#ADD8E6"
+        android:text="登录"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/login_bt"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:background="#00000000"
+        android:text="新用户注册"
+  android:textColor="@color/blue"
+  android:layout_marginRight="20dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:id="@+id/login_zc"
+        android:layout_gravity="center|right"
+        />
+
+
+</LinearLayout>

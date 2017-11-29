@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F4F3"
+
+   >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:src="@mipmap/back_icon2"
+            android:id="@+id/back_icon"
+            android:background="#ADE9F9"
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="订单处理"
+            android:textSize="20dp"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:id="@+id/top_title"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:background="#ADE9F9"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/order_wait"
+            android:text="等待接单"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/order_do"
+            android:text="已接订单"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/order_finish"
+            android:text="完成订单"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/order_after"
+            android:text="订单售后"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

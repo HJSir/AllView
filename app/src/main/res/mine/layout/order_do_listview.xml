@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@mipmap/shop_order"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/lv_do_shopname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="张家界汽修"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:gravity="center|left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="105dp">
+        <ImageView
+            android:id="@+id/lv_do_image"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/lv_do_content"
+                    android:layout_weight="1.5"
+                    android:text="维修内容"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:id="@+id/lv_do_price"
+                    android:layout_weight="3"
+                    android:text="3000元"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lv_do_statues"
+                android:text="已接被接单"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:src="@mipmap/order_dingw"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center|left"
+                    android:id="@+id/lv_do_place"
+                    android:text="地点"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<LinearLayout-->
+            <!--android:layout_weight="3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:orientation="vertical">-->
+        <!--<Button-->
+            <!--android:textSize="12dp"-->
+            <!--android:id="@+id/lv_do_surefinish"-->
+            <!--android:background="#ADE9F9"-->
+            <!--android:text="确认完工"-->
+            <!--android:layout_width="90dp"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_height="30dp"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="8"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:orientation="vertical">-->
+        <!--<Button-->
+            <!--android:id="@+id/lv_do_checkplan"-->
+            <!--android:background="#ADE9F9"-->
+            <!--android:text="查看进度"-->
+            <!--android:textSize="12dp"-->
+            <!--android:layout_width="90dp"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_height="30dp"/>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

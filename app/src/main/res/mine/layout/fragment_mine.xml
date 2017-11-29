@@ -1,0 +1,299 @@
+<com.example.jian.allview.utils.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:tools="http://schemas.android.com/tools"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                     android:orientation="vertical"
+                                     android:background="#ffefebe7"
+                                    >
+
+    <com.example.jian.allview.utils.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_heightPercent="28%"
+        android:orientation="vertical"
+        android:background="#ADE9F9">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_marginTop="10dp"
+        android:id="@+id/user_image"
+
+         app:layout_aspectRatio="100%"
+          app:layout_heightPercent="60%"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        app:actualImageScaleType="centerCrop"
+        app:roundAsCircle="true"
+        app:roundingBorderColor="#fff3cf44"
+        app:roundingBorderWidth="2dp"/>
+
+
+    <TextView
+android:layout_marginTop="10dp"
+        android:id="@+id/user_name"
+        android:text="点击头像登录"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="20%"
+        />
+    </com.example.jian.allview.utils.PercentLinearLayout>
+
+    <com.example.jian.allview.utils.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp">
+
+<TextView
+    android:layout_marginLeft="10dp"
+    android:gravity="center|left"
+    android:layout_gravity="center"
+    app:layout_widthPercent="40%"
+    android:textColor="@color/black"
+    android:textSize="20dp"
+    app:layout_heightPercent="80%"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="我的订单"
+   />
+        <LinearLayout
+            android:id="@+id/ll_allorder"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="60%"
+            android:layout_gravity="center|right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+
+            android:gravity="center|right"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="查看全部订单"/>
+        <ImageView
+
+         android:layout_weight="8"
+          android:layout_gravity="center|right"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/choose"/>
+            <TextView
+                android:layout_weight="8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </com.example.jian.allview.utils.PercentLinearLayout>
+
+
+
+    <com.example.jian.allview.utils.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <com.example.jian.allview.utils.PercentLinearLayout
+
+            android:layout_marginTop="3dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="25%"
+            android:orientation="vertical"
+            android:id="@+id/mine_wait"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/wait"
+                app:layout_heightPercent="70%"
+
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_heightPercent="30%"
+                android:text="等待接单"
+                android:gravity="center"
+
+                />
+
+        </com.example.jian.allview.utils.PercentLinearLayout>
+
+        <com.example.jian.allview.utils.PercentLinearLayout
+            android:layout_marginTop="4dp"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mine_do"
+            android:orientation="vertical"
+            app:layout_widthPercent="25%"
+           >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/recive"
+                app:layout_heightPercent="70%"
+
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_heightPercent="30%"
+                android:text="已经接单"
+                android:gravity="center"
+
+                />
+        </com.example.jian.allview.utils.PercentLinearLayout>
+
+
+        <com.example.jian.allview.utils.PercentLinearLayout
+            android:layout_marginTop="2dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="25%"
+            android:orientation="vertical"
+            android:id="@+id/mine_finish"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/sailsuc"
+                app:layout_heightPercent="70%"
+
+
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_heightPercent="30%"
+                android:text="订单成功"
+                android:gravity="center"
+
+                />
+        </com.example.jian.allview.utils.PercentLinearLayout>
+
+
+        <com.example.jian.allview.utils.PercentLinearLayout
+
+            android:layout_marginTop="3dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="25%"
+            android:orientation="vertical"
+            android:id="@+id/mine_after"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/sailback"
+
+                app:layout_heightPercent="70%"
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_heightPercent="30%"
+                android:text="订单售后"
+                android:gravity="center"
+
+                />
+        </com.example.jian.allview.utils.PercentLinearLayout>
+
+
+    </com.example.jian.allview.utils.PercentLinearLayout>
+
+
+    <com.example.jian.allview.utils.PercentLinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%">
+        <ImageView
+            android:layout_marginTop="12dp"
+            app:layout_heightPercent="60%"
+            android:src="@mipmap/customization"
+            app:layout_widthPercent="17%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            app:layout_heightPercent="70%"
+            android:text="我的定制"
+            android:textSize="15dp"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            app:layout_widthPercent="83%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.example.jian.allview.utils.PercentLinearLayout>
+    <com.example.jian.allview.utils.PercentLinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%">
+        <ImageView
+            android:layout_marginTop="12dp"
+            app:layout_heightPercent="60%"
+            android:src="@mipmap/collect"
+            app:layout_widthPercent="17%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            app:layout_heightPercent="70%"
+            android:text="我的收藏"
+            android:textSize="15dp"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            app:layout_widthPercent="83%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.example.jian.allview.utils.PercentLinearLayout>
+
+    <com.example.jian.allview.utils.PercentLinearLayout
+        android:id="@+id/mine_setting"
+
+
+
+
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%">
+        <ImageView
+            android:layout_marginTop="12dp"
+            app:layout_heightPercent="60%"
+            android:src="@mipmap/setting"
+            app:layout_widthPercent="17%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            app:layout_heightPercent="70%"
+            android:text="设置"
+            android:textSize="15dp"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            app:layout_widthPercent="83%"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.example.jian.allview.utils.PercentLinearLayout>
+</com.example.jian.allview.utils.PercentLinearLayout>
