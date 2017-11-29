@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bx_1"
+    android:tag="bx_1"
+    android:layout_width="match_parent"
+    android:background="#f5f5f5"
+    android:layout_height="@dimen/px_80">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/px_74"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#ff000000"
+        android:text=""/>
+    <ImageView
+        android:id="@+id/img_bx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_54"
+        android:background="@mipmap/ic_no_cheak"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/px_54"
+        android:background="@color/line">
+    </ImageView>
+</RelativeLayout>
