@@ -11,6 +11,7 @@ import com.example.jian.allview.base.BasePresenter;
 import com.example.jian.allview.find.ui.fragment.FindFragment;
 import com.example.jian.allview.mine.ui.fragment.MineFragment;
 import com.example.jian.allview.news.ui.fragment.NewsFragment;
+import com.example.lenovo.mainui.activity.MainUi;
 
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
@@ -20,7 +21,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private TextView tv_news;
     private TextView tv_mine;
     private FindFragment fg_find;
-    private HomeFragment fg_home;
+    private MainUi fg_home;
     private MineFragment fg_mine;
     private NewsFragment fg_news;
 
@@ -39,7 +40,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         //set默认fragment
         if (fg_home == null) {
 
-            fg_home = new HomeFragment();
+            fg_home = new MainUi();
             transaction.add(R.id.fragment_container, fg_home);
 
         } else {
@@ -111,7 +112,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.tab_home:
                 changeStatues(tv_home);
                 if (fg_home == null) {
-                    fg_home = new HomeFragment();
+                    fg_home = new MainUi();
                     transaction.add(R.id.fragment_container, fg_home);
                 } else {
                     transaction.show(fg_home);
