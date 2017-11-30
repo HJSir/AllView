@@ -34,7 +34,7 @@ public class NewsListPresenter extends BasePresenter<lNewsListView> {
 
     public void getNewsList(){
 
-        lastTime = PreUtils.getLong("lastTime",0);//读取对应频道下最后一次刷新的时间戳
+//        lastTime = PreUtils.getLong("lastTime",0);//读取对应频道下最后一次刷新的时间戳
 
 //        if (lastTime == 0){
             //如果为空，则是从来没有刷新过，使用当前时间戳
@@ -53,14 +53,14 @@ public class NewsListPresenter extends BasePresenter<lNewsListView> {
 
             @Override
             public void onNext( NewsResponse response) {
-                Log.i("jin","onnext");
-                lastTime = System.currentTimeMillis() / 1000;
-                PreUtils.putLong("lastTime",lastTime);//保存刷新的时间戳
+//                Log.i("jin","onnext");
+//                lastTime = System.currentTimeMillis() / 1000;
+//                PreUtils.putLong("lastTime",lastTime);//保存刷新的时间戳
                 List<NewsData> data = response.data;
                 List<News> newsList = new ArrayList<>();
                 if (!ListUtils.isEmpty(data)){
                     for (NewsData newsData : data) {
-                        Log.i("jin","2");
+
                         News news = new Gson().fromJson(newsData.content, News.class);
                         newsList.add(news);
                     }

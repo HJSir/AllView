@@ -47,9 +47,10 @@
         android:background="@color/gray"
         />
     <ScrollView
+        android:layout_weight="1"
         android:id="@+id/id_scrollView"
         android:layout_width="match_parent"
-        android:layout_height="491.5dp"
+        android:layout_height="match_parent"
         >
         <LinearLayout
             android:layout_width="match_parent"

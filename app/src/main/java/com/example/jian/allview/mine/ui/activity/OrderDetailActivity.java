@@ -81,8 +81,8 @@ TextView tv_typename;
 
 
         tv_typename.setText(orderDetail.getOrderName());
-        order_time.setText("Ê±¼ä£º"+DateUtils.getShortTime(orderDetail.getConsumeTime().getTime()));
-        order_num.setText("ÊýÁ¿£º"+orderDetail.getTotal());
+        order_time.setText(""+DateUtils.getShortTime(orderDetail.getConsumeTime().getTime()));
+        order_num.setText(""+orderDetail.getTotal());
         if(orderDetail.getHotelID()==0){
             IDInt id2 = new IDInt();
             id2.setId(1);
@@ -104,16 +104,16 @@ mPresenter.getScenicSpot(id2);
 
     @Override
     public void getHotelRoomInfo(HotelInfo info) {
-        order_price.setText("¼Û¸ñ£º"+info.getPrice());
+        order_price.setText("ï¿½Û¸ï¿½"+info.getPrice());
         logo.setImageURI("http://123.207.56.152/vrzjj/"+info.getCoverURL());
-        order_tel.setText("µç»°£º"+info.getPhoneNum());
+        order_tel.setText("ï¿½ç»°ï¿½ï¿½"+info.getPhoneNum());
 
     }
 
     @Override
     public void getHotelInfo(Hotel hotel) {
-                order_shopname.setText("µê³Æ£º"+hotel.getHotelName());
-        order_adress.setText("µØÖ·£º"+hotel.getAddress());
+                order_shopname.setText("ï¿½ï¿½Æ£ï¿½"+hotel.getHotelName());
+        order_adress.setText("ï¿½ï¿½Ö·ï¿½ï¿½"+hotel.getAddress());
 
 
     }
@@ -121,11 +121,11 @@ mPresenter.getScenicSpot(id2);
     @Override
     public void getScenicSpotInfo(ScenicSpot spot) {
 
-        order_price.setText("¼Û¸ñ£º"+spot.getScenicPrice());
+        order_price.setText("ï¿½Û¸ï¿½"+spot.getScenicPrice());
         logo.setImageURI("http://123.207.56.152/vrzjj/"+spot.getCoverURL());
-        order_tel.setText("µç»°£º"+spot.getPhoneNum());
-        order_shopname.setText("¾°ÇøÃû£º"+spot.getScenicName());
-        order_adress.setText("µØÖ·£º"+spot.getAddress());
+        order_tel.setText("ï¿½ç»°ï¿½ï¿½"+spot.getPhoneNum());
+        order_shopname.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+spot.getScenicName());
+        order_adress.setText("ï¿½ï¿½Ö·ï¿½ï¿½"+spot.getAddress());
     }
 
 
