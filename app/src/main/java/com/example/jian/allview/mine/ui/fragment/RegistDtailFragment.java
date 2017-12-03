@@ -49,9 +49,9 @@ public class RegistDtailFragment extends BaseFragment<RegistPresetner> implement
 
 
             if(msg.what>0)
-                     regBTHQYZM.setText("Çë"+msg.what+"ÃëºóÖØÊÔ");
+                     regBTHQYZM.setText("è¯·"+msg.what+"ç§’åé‡è¯•");
             else
-                    regBTHQYZM.setText("»ñÈ¡ÑéÖ¤Âë");
+                    regBTHQYZM.setText("è¯·é‡è¯•");
 
             super.handleMessage(msg);
         }
@@ -107,13 +107,13 @@ public class RegistDtailFragment extends BaseFragment<RegistPresetner> implement
     @Override
     public void getRegistStatues(String o) {
         if(o.equals("1")){
-            Toast.makeText(getActivity(),"×¢²á³É¹¦",Toast.LENGTH_SHORT);
+            Toast.makeText(getActivity(),"æˆåŠŸ",Toast.LENGTH_SHORT);
             if (getActivity() instanceof LoginFragment.LoginClickListener)
             {
                 ((RegistDtailFragment.RegistJump) getActivity()).onJump();
             }
         }else
-            Toast.makeText(getActivity(),"×¢²áÊ§°Ü",Toast.LENGTH_SHORT);
+            Toast.makeText(getActivity(),"å¤±è´¥",Toast.LENGTH_SHORT);
     }
 
     public interface RegistJump{
@@ -132,11 +132,11 @@ public class RegistDtailFragment extends BaseFragment<RegistPresetner> implement
             public void onClick(DialogInterface dialog, int which)
             {
 
-                    //ï¿??
+                    //ï¿½??
                     if(which==0)
-                        regSEX.setText("ÄĞ");
+                        regSEX.setText("ç”·");
                     else
-                        regSEX.setText("Å®");
+                        regSEX.setText("å¥³");
 
 
             }
@@ -171,9 +171,9 @@ public void saveinfo(String id,String pw,String phnum,String name,String sex){
                     });
                 } else {
                     if (result == SMSSDK.RESULT_COMPLETE) {
-                        //ï¿½Øµï¿½ï¿½ï¿½ï¿?
+                        //ï¿½Øµï¿½ï¿½ï¿½ï¿½?
                         if (event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE) {
-                           // ·µ»Ø³É¹¦¡£ÔÚ´ËÌá½»ĞÅÏ¢µ½·şÎñÆ÷Íê³É×¢²á
+                           // ï¿½ï¿½ï¿½Ø³É¹ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½á½»ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½
                             User user=new User();
                             user.setUserTel(id);
                             user.setUserPass(pw);
@@ -185,7 +185,7 @@ public void saveinfo(String id,String pw,String phnum,String name,String sex){
                             isRegMessage=true;
 
                         }else if (event ==SMSSDK.EVENT_GET_SUPPORTED_COUNTRIES){
-                            //ï¿½ï¿½ï¿½ï¿½Ö§ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½Ğ±ï¿?
+                            //ï¿½ï¿½ï¿½ï¿½Ö§ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½?
 
 
                         }
@@ -196,7 +196,7 @@ public void saveinfo(String id,String pw,String phnum,String name,String sex){
             }
         };
 
-        // æ³¨å†Œç›‘å¬ï¿??
+        // æ³¨å†Œç›‘å¬ï¿½??
         SMSSDK.registerEventHandler(eventHandler);
 
 
@@ -218,8 +218,8 @@ public void saveinfo(String id,String pw,String phnum,String name,String sex){
 
         }
 //        if(v.getId()==R.id.reg_sex){
-//            final String[] type2 = {"ÄĞ", "Å®"};
-//            Alertdialog("Ñ¡ÔñÄĞÅ®",type2);
+//            final String[] type2 = {"ï¿½ï¿½", "Å®"};
+//            Alertdialog("Ñ¡ï¿½ï¿½ï¿½ï¿½Å®",type2);
 //        }
         if(v.getId()==R.id.reg_bthqyzm){
             if(tag==0){

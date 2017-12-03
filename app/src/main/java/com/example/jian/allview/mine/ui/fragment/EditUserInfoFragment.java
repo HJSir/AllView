@@ -30,7 +30,7 @@ public class EditUserInfoFragment extends BaseFragment<DealUserInfoPresenter> im
     @Override
     public void DealSuccess(String s) {
         if(s.equals("1")){
-        Toast.makeText(getActivity(), "����ɹ�", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), "成功", Toast.LENGTH_SHORT).show();
 
 
             SharedPreferences preferences=getActivity().getSharedPreferences("user", Context.MODE_PRIVATE);
@@ -40,7 +40,7 @@ public class EditUserInfoFragment extends BaseFragment<DealUserInfoPresenter> im
             editor.commit();
             getFragmentManager().popBackStack();
         } else {
-            Toast.makeText(getActivity(),"����ʧ��",Toast.LENGTH_SHORT);
+            Toast.makeText(getActivity(),"失败",Toast.LENGTH_SHORT);
         }
     }
 
@@ -112,14 +112,14 @@ public class EditUserInfoFragment extends BaseFragment<DealUserInfoPresenter> im
 
 
 //            case R.id.mine_userimfo_editsex:
-//                final String[] type2 = {"��", "Ů"};
-//                Alertdialog("ѡ����Ů",type2,0);
+//                final String[] type2 = {"��", "Ů"};
+//                Alertdialog("ѡ����Ů",type2,0);
 //
 //
 //                break;
             case R.id.user_image_edit:
-                final String[] type1 = {"���", "���"};
-                Alertdialog("��ѡ��",type1,1);
+                final String[] type1 = {"相册", "相机"};
+                Alertdialog("选择",type1,1);
                 break;
 
 
@@ -133,9 +133,9 @@ public class EditUserInfoFragment extends BaseFragment<DealUserInfoPresenter> im
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 //        builder.setIcon(R.drawable.ic_launcher);
         builder.setTitle(title);
-//        //    指定下拉列表的显示数�?
+//        //    指定下拉列表的显示数�?
 //        final String[] cities = {"广州", "上海", "北京", "香港", "澳门"};
-        //    设置�?个下拉的列表选择�?
+        //    设置�?个下拉的列表选择�?
         builder.setItems(type, new DialogInterface.OnClickListener()
         {
             @Override
@@ -144,7 +144,7 @@ public class EditUserInfoFragment extends BaseFragment<DealUserInfoPresenter> im
 //                if(tag==0){
 //
 //                    if(which==0)
-//                        ed_sex.setText("��");
+//                        ed_sex.setText("��");
 //                    else
 //                        ed_sex.setText("Ů");
 //                }
@@ -154,7 +154,7 @@ public class EditUserInfoFragment extends BaseFragment<DealUserInfoPresenter> im
                     startActivity(intent);
 
                 }
-                // Toast.makeText(getActivity(), "选择的为�?" +tag[0]+ type[which], Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getActivity(), "选择的为�?" +tag[0]+ type[which], Toast.LENGTH_SHORT).show();
             }
         });
         builder.show();
@@ -164,13 +164,13 @@ public class EditUserInfoFragment extends BaseFragment<DealUserInfoPresenter> im
     @Override
     public void onResume() {
         super.onResume();
-        //从Share中取出地�?并显示�??
+        //从Share中取出地�?并显示�??
         SharedPreferences preferences=getActivity().getSharedPreferences("user", Context.MODE_PRIVATE);
         String url=preferences.getString("Surl",null);
         if (url!=null){
-//            Toast.makeText(getActivity(), "图片地址�?"+preferences.getString("Surl",null), Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getActivity(), "图片地址�?"+preferences.getString("Surl",null), Toast.LENGTH_SHORT).show();
             user_image_edit.setImageURI(url);
-//            Toast.makeText(getActivity(),"目前使用在线数据库无法存储图片，�?以无法修改头像！",Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getActivity(),"目前使用在线数据库无法存储图片，�?以无法修改头像！",Toast.LENGTH_SHORT).show();
         }
 
     }

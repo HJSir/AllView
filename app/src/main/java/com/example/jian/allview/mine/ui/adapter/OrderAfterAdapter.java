@@ -74,15 +74,15 @@ public class OrderAfterAdapter extends BaseAdapter {
         }
         Order orderbean = mlist.get(position);
         viewholder.shopname.setText(orderbean.getOrderName());
-        viewholder.content.setText("¶©µ¥ºÅ£º"+orderbean.getOrderNum());
+        viewholder.content.setText("è®¢å•æ•°é‡ï¼š"+orderbean.getOrderNum());
         if(orderbean.getOrderStatus()==0)
-            statues="µÈ´ı½Óµ¥";
+            statues="ç­‰å¾…æ¥å•";
         else if(orderbean.getOrderStatus()==1)
-            statues="ÉÌ¼Ò½Óµ¥";
+            statues="å·²æ¥è®¢å•";
         else if(orderbean.getOrderStatus()==2)
-            statues="¶©µ¥Íê³É";
+            statues="å®Œæˆè®¢å•";
         viewholder.orderstatues.setText(statues);
-        viewholder.place.setText("ÕÅ¼Ò½ç");
+        viewholder.place.setText("å¼ å®¶ç•Œ");
 
 
 

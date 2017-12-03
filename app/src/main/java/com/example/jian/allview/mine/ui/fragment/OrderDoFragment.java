@@ -38,16 +38,7 @@ public class OrderDoFragment extends BaseFragment<OrderPresenter> implements IOr
     @Override
     public void initData() {
         super.initData();
-//        if(mList==null){
-//            mList=new ArrayList<orderbean>();
-//            mOrderbean = new orderbean();
-//            mOrderbean.setContent("门票售卖");
-//            mOrderbean.setOrderstatues("已完成");
-//            mOrderbean.setPlace("张家界天门山");
-//            mOrderbean.setShopname("天门山售票处");
-//            mList.add(mOrderbean);
-//        }
-//        mListView.setAdapter(new OrderDoAdapter(getActivity(),mList));
+
         ID s = new ID();
         s.setUserID("1");
         mPresenter.getOrderlist(s);

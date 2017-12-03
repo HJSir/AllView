@@ -97,7 +97,7 @@ UserDtailFragment mUserDtailFragment;
         if(preferences.getString("name",null)==null&&preferences.getString("phoneNumber",null)!=null) {
             username.setText(preferences.getString("phoneNumber",null));
         }else
-            username.setText(preferences.getString("name","ÇëµÇÂ¼"));
+            username.setText(preferences.getString("name","è¯·ç™»å½•"));
 //        String Sword=preferences.getString("WORD", "0");
 //        username.setText(sname);
 //        System.out.println("name"+sname+"Sword"+Sword+"ISLogin"+preferences.getBoolean("Stag",false));

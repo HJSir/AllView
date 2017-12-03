@@ -81,8 +81,8 @@ TextView tv_typename;
 
 
         tv_typename.setText(orderDetail.getOrderName());
-        order_time.setText(""+DateUtils.getShortTime(orderDetail.getConsumeTime().getTime()));
-        order_num.setText(""+orderDetail.getTotal());
+        order_time.setText("时间："+DateUtils.getShortTime(orderDetail.getConsumeTime().getTime()));
+        order_num.setText("数量："+orderDetail.getTotal());
         if(orderDetail.getHotelID()==0){
             IDInt id2 = new IDInt();
             id2.setId(1);
@@ -104,16 +104,16 @@ mPresenter.getScenicSpot(id2);
 
     @Override
     public void getHotelRoomInfo(HotelInfo info) {
-        order_price.setText("�۸�"+info.getPrice());
+        order_price.setText("价格："+info.getPrice());
         logo.setImageURI("http://123.207.56.152/vrzjj/"+info.getCoverURL());
-        order_tel.setText("�绰��"+info.getPhoneNum());
+        order_tel.setText("电话："+info.getPhoneNum());
 
     }
 
     @Override
     public void getHotelInfo(Hotel hotel) {
-                order_shopname.setText("��ƣ�"+hotel.getHotelName());
-        order_adress.setText("��ַ��"+hotel.getAddress());
+                order_shopname.setText("店名："+hotel.getHotelName());
+        order_adress.setText("地址："+hotel.getAddress());
 
 
     }
@@ -121,11 +121,11 @@ mPresenter.getScenicSpot(id2);
     @Override
     public void getScenicSpotInfo(ScenicSpot spot) {
 
-        order_price.setText("�۸�"+spot.getScenicPrice());
+        order_price.setText("价格："+spot.getScenicPrice());
         logo.setImageURI("http://123.207.56.152/vrzjj/"+spot.getCoverURL());
-        order_tel.setText("�绰��"+spot.getPhoneNum());
-        order_shopname.setText("��������"+spot.getScenicName());
-        order_adress.setText("��ַ��"+spot.getAddress());
+        order_tel.setText("电话："+spot.getPhoneNum());
+        order_shopname.setText("店名："+spot.getScenicName());
+        order_adress.setText("地址："+spot.getAddress());
     }
 
 
