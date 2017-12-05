@@ -1,10 +1,5 @@
 package com.example.jian.allview.news.bean;
 
-/**
- * @author ChayChan
- * @description: 用户实体类
- * @date 2017/7/9  10:43
- */
 
 public class UserEntity {
     /**

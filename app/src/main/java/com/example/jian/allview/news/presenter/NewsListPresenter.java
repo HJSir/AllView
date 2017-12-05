@@ -62,6 +62,7 @@ public class NewsListPresenter extends BasePresenter<lNewsListView> {
                     for (NewsData newsData : data) {
 
                         News news = new Gson().fromJson(newsData.content, News.class);
+                        Log.i("lognews",news.toString());
                         newsList.add(news);
                     }
                 }

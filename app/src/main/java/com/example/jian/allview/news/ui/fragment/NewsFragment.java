@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -109,8 +110,8 @@ public class NewsFragment extends BaseFragment<NewsListPresenter> implements lNe
 
             for(int i=0;i<newList.size();i++){
                 News fourthNews = newList.get(i);
-                //如果列表第4个和原有列表第4个新闻都是广告，并且id一致，移除
-                if (fourthNews.tag.equals(Constant.ARTICLE_GENRE_AD)) {
+                //如果列表第4个和原有列表第4个新闻都是广告，并且id一致，移除 ,无标题 移除
+                if (fourthNews.tag.equals(Constant.ARTICLE_GENRE_AD)|| TextUtils.isEmpty(fourthNews.abstractX)) {
                     newList.remove(i);
                 }
 

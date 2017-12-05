@@ -121,7 +121,7 @@ public class NewsAdapter extends BaseQuickAdapter<News, BaseViewHolder> {
 
     @Override
     protected void convert(BaseViewHolder helper, News news) {
-        if (TextUtils.isEmpty(news.title)){
+        if (TextUtils.isEmpty(news.title)||TextUtils.isEmpty(news.abstractX)){
             //如果没有标题，则直接跳过
             return;
         }

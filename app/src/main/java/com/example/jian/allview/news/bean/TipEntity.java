@@ -1,10 +1,6 @@
 package com.example.jian.allview.news.bean;
 
-/**
- * @author ChayChan
- * @description: TODO
- * @date 2017/7/6  15:31
- */
+
 
 public class TipEntity {
     /**
